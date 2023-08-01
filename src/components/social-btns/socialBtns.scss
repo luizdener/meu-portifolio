@@ -1,0 +1,59 @@
+.social-btns {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 325px;
+
+    justify-content: space-around;
+
+
+    cursor: pointer;
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 51.6px;
+        height: 51.6px;
+
+        .icon-git, .icon-insta, .icon-linkedin {
+            width: 90%;
+            height: 90%;
+
+            padding: 4px;
+
+            color: white;
+
+            border: 2px solid white;
+            border-radius: 100%;
+
+            transition: .4s;
+        }
+    }
+
+    .icon-git:hover {
+        color: black;
+
+        scale: 1.5;
+
+        border: none;
+    }
+
+    .icon-insta:hover {
+        color: #bc1888;
+
+        scale: 1.5;
+
+        border: none;
+    }
+
+    .icon-linkedin:hover {
+        color: #0e76a8;
+
+        scale: 1.5;
+
+        border: none;
+    }
+
+}

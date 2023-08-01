@@ -1,0 +1,23 @@
+:root {
+    --color-text-primary: white;
+    --bg-color-primary: #2c2c2c;
+    --color-text-secondary: #b3b3b3
+}
+    
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color-primary);
+}
+    

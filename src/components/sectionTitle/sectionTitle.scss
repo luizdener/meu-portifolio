@@ -1,0 +1,13 @@
+.section-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--color-text-primary);
+
+    @media (min-width: 768px) {
+        line-height: 36px;
+        font-size: 24px;
+        text-align: start;
+    }
+}

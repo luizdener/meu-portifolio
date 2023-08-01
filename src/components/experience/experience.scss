@@ -1,0 +1,96 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+
+    grid-area: experience;
+
+    max-width: 500px;
+
+    p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--color-text-secondary);
+        text-align: center;
+    }
+
+    .tecnologies {
+        margin: 18px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .icon-html, .icon-css, .icon-js, .icon-react, .icon-node, .icon-python {
+            scale: 3;
+            transition: .8s;
+        }
+
+        .icon-html:hover{
+            scale: 3.4;
+            color: orangered;
+        }
+
+        .icon-css:hover {
+            scale: 3.4;
+            color: blue;
+        }
+
+        .icon-js:hover {
+            scale: 3.4;
+            color: rgb(255, 225, 0);
+        }
+
+        .icon-react:hover {
+            scale: 3.4;
+            color: lightblue;
+        }
+
+        .icon-node:hover {
+            scale: 3.4;
+            color: green;
+        }
+
+        .icon-python:hover {
+            scale: 3.4;
+            color: yellow;
+        }
+    }
+
+    .btn-projects {
+        width: 80%;
+        background-color: rgba(171, 143, 0, 0.662);
+
+        border-radius: 24px;
+        padding: 15px;
+
+        text-decoration: none;
+        text-align: center;
+        color: var(--color-text-primary);
+        font-size: 28px;
+        line-height: 30px;
+
+        transition: .7s;
+    }
+
+    .btn-projects:hover {
+        background-color: rgba(255, 208, 0, 0.801);
+        scale: 1.05;
+    }
+
+    @media (min-width: 768px) {
+        align-items: flex-start;
+
+        .btn-projects {
+            margin: auto;
+        }
+        
+        p{
+            font-size: 24px;
+            line-height: 36px;
+            text-align: start;
+        }
+    }
+}
