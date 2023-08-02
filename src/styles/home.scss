@@ -30,14 +30,14 @@
             gap: 8px;
             justify-content: center;
     
-            background: rgba(171, 143, 0, 0.662);
+            background: #e8f1f2;
             border-radius: 24px;
             width: 325px;
             padding: 12px;
             
             text-decoration: none;
             text-align: center;
-            color: var(--color-text-primary);
+            color: var(--bg-color-primary);
             font-size: 28px;
             line-height: 30px;
     
@@ -48,7 +48,7 @@
         }
 
         .primary-button:hover {
-            background-color: rgba(255, 208, 0, 0.801);
+            background-color: #1b98e0;
             scale: 1.05;
         }
     }

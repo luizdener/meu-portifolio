@@ -61,14 +61,14 @@
 
     .btn-projects {
         width: 80%;
-        background-color: rgba(171, 143, 0, 0.662);
+        background-color: #e8f1f2;
 
         border-radius: 24px;
         padding: 15px;
 
         text-decoration: none;
         text-align: center;
-        color: var(--color-text-primary);
+        color: var(--bg-color-primary);
         font-size: 28px;
         line-height: 30px;
 
@@ -76,7 +76,7 @@
     }
 
     .btn-projects:hover {
-        background-color: rgba(255, 208, 0, 0.801);
+        background-color: #1b98e0;
         scale: 1.05;
     }
 
