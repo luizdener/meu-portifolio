@@ -8,12 +8,11 @@ const Infos = () => {
             <SectionTitle text="Languages"/>
             <div className="languages-info">
                 <span>PT-BR - Native Speaker</span>
-                <span>EN - Basic</span>
+                <span>EN - Technician</span>
             </div>
 
             <SectionTitle text="Education"/>
             <div class="education-info">
-                <span>emoji</span>
                 <span>Software Engineering - University North of Paraná</span>
             </div>
         </div>

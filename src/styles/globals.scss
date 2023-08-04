@@ -1,7 +1,8 @@
 :root {
-    --color-text-primary: #247ba0;
-    --bg-color-primary: #13293d;
-    --color-text-secondary: #e8f1f2;
+    --bg-color-primary: #0a1930;
+    --color-text-primary: #cfdcfc;
+    --color-text-secondary: #56a69e;
+    --color-text-terciary: #818aa6;
 }
     
 
@@ -9,6 +10,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
     
 

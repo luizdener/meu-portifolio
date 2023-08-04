@@ -13,8 +13,12 @@
         font-weight: 300;
         font-size: 18px;
         line-height: 28px;
-        color: var(--color-text-secondary);
+        color: var(--color-text-terciary);
         text-align: center;
+
+        strong {
+            color: var(--color-text-secondary);
+        }
     }
 
     .tecnologies {
@@ -24,6 +28,7 @@
         justify-content: space-around;
 
         .icon-html, .icon-css, .icon-js, .icon-react, .icon-node, .icon-python {
+            color: var(--color-text-terciary);
             scale: 3;
             transition: .8s;
         }
@@ -61,14 +66,16 @@
 
     .btn-projects {
         width: 80%;
-        background-color: #e8f1f2;
+        background-color: var(--bg-color-primary);
 
-        border-radius: 24px;
+        border-radius: 5px;
+        border: 2px solid var(--color-text-secondary);
+
         padding: 15px;
 
         text-decoration: none;
         text-align: center;
-        color: var(--bg-color-primary);
+        color: var(--color-text-secondary);
         font-size: 28px;
         line-height: 30px;
 
@@ -76,7 +83,9 @@
     }
 
     .btn-projects:hover {
-        background-color: #1b98e0;
+        background-color: var(--color-text-secondary);
+        color: var(--bg-color-primary);
+        box-shadow: 6px 10px 8px rgba(0, 0, 0, 0.518);
         scale: 1.05;
     }
 

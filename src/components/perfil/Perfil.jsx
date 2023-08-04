@@ -4,8 +4,9 @@ const Perfil = () => {
     return (
         <div className="perfil">
             <div>
-                <h1>Hi, i´m Luiz Dener!</h1>
-                <h2>Software Developer</h2>
+                <h3>Hi, my name is</h3>
+                <h1>Luiz Dener!</h1>
+                <h2>Welcome to my portfolio.</h2>
             </div>
 
             <img src="./dener.webp" alt="Luiz Dener"

@@ -7,7 +7,7 @@ const Experience = () => {
     return(
         <div class="experience">
             <SectionTitle text="Experience"/>
-            <p>Desenvolvedor FullStack com experiência em React. Graduando Engenharia de Software na Universidade Norte do Paraná (UNOPAR)</p>
+            <p>As a <strong>Fullstack Developer</strong> i build applications using some of today's leading technologies such as <strong>React</strong> and <strong>Node Js</strong>!</p>
             <div className="tecnologies">
                 <DiHtml5 className="icon-html"/>
                 <DiCss3 className="icon-css"/>
@@ -16,7 +16,7 @@ const Experience = () => {
                 <DiNodejs className="icon-node"/>
                 <DiPython className="icon-python"/>
             </div>
-            <a href="#" className="btn-projects">Projects</a>
+            <a href=".\src\components\experience\pag-projetos\projetos.html" target="_top" className="btn-projects">See my projects!</a>
         </div>
     )
 }
