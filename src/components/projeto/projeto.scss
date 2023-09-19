@@ -1,4 +1,4 @@
-.project-container {
+.project-card {
     display: flex;
     flex-direction: column;
 
@@ -25,8 +25,8 @@
     }
 
     a {
-        color: var(--border-color);
-        border: 1px solid var(--border-color);
+        color: var(--border-color-projects);
+        border: 1px solid var(--border-color-projects);
         border-radius: 5px;
         box-shadow: 2px 2px 10px #56a69e4f;
 
@@ -38,11 +38,11 @@
     }
 
     a:hover {
-        background-color: var(--border-color);
+        background-color: var(--border-color-projects);
         color: var(--bg-color-secondary);
     }
 }
 
-.project-container:hover {
+.project-card:hover {
     scale: 1.05;
 }

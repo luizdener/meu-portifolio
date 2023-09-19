@@ -2,7 +2,7 @@ import "./projeto.scss"
 
 const Projeto = ({name, description, href}) => {
     return (
-        <div className="project-container">
+        <div className="project-card">
             <h2>{name}</h2>
             <p>{description}</p>
             <a href={href}>Click here to see the project!</a>

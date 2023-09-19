@@ -16,7 +16,7 @@ const Experience = () => {
                 <DiNodejs className="icon-node"/>
                 <DiPython className="icon-python"/>
             </div>
-            <a href=".\src\components\experience\pag-projetos\projetos.html" target="_top" className="btn-projects">See my projects!</a>
+            <a href="/meu-portifolio/projects" target="_top" className="btn-projects">See my projects!</a>
         </div>
     )
 }
