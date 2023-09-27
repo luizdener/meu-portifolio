@@ -1,6 +1,13 @@
 import '../styles/projects.scss'
 
+import {Navigation, Pagination} from 'swiper/modules'
+import {Swiper, SwiperSlide} from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
 import Projeto from '../components/projeto/Projeto'
+import { useEffect, useState } from 'react'
 
 const projects = [
   {
@@ -45,13 +52,34 @@ const projects = [
 ]
 
 function Projects() {
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleResize)
+  })
+
   return (
     <div className='projects'>
         <h1>Projects</h1>
             <div className="projects-container">
-                  {projects.map((project) => <Projeto name={project.name} src={project.src} link={project.link} repository={project.repository} key={project.key}/>)}
+                <Swiper 
+                modules={[Navigation, Pagination]}
+                spaceBetween={50}
+                slidesPerView={windowWidth >= 942 ? 2 : 1}
+                navigation
+                pagination={{clickable: true}}
+                >
+                  {projects.map((project) => 
+                  <SwiperSlide>
+                    <Projeto name={project.name} src={project.src} link={project.link} repository={project.repository} key={project.key}/>
+                  </SwiperSlide>)}
+                </Swiper>
             </div>
-
             <a className='home-button' href="/meu-portifolio">Home</a>
     </div>
   )

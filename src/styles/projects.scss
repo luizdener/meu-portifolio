@@ -21,6 +21,16 @@
         display: flex;
         flex-direction: column;
         gap: 28px;
+
+        .swiper {
+            width: 100%;
+            padding: 32px;
+
+            .swiper-slide{
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 
     .home-button {
@@ -43,15 +53,5 @@
 
         color: var(--color-text-secondary);
         border-color: transparent;
-    }
-
-}
-
-@media (min-width: 768px) {
-
-    .projects {
-        .projects-container{
-            flex-direction: row;
-        }
     }
 }
