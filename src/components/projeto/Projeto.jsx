@@ -1,11 +1,16 @@
 import "./projeto.scss"
 
-const Projeto = ({name, description, href}) => {
+const Projeto = ({name, description, link, repository, src}) => {
     return (
         <div className="project-card">
             <h2>{name}</h2>
+            <img src={src}/>
             <p>{description}</p>
-            <a href={href}>Click here to see the project!</a>
+            {link ?
+            <a href={link} target="_blank">Click here to see the project!</a>
+            :
+            <></>}
+            <a href={repository} target="_blank"> Click here to acess repository</a>
         </div>
     );
 }
